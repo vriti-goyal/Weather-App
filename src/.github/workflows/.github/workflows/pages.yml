@@ -19,7 +19,6 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      # If you want to keep your API key as a secret, see the note below
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -33,3 +32,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
