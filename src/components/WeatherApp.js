@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import WeatherForm from "./WeatherForm";
 import WeatherDisplay from "./WeatherDisplay";
 
-const API_KEY = "086b4baed683d02ae6502fdd0ecec74b"; // <-- Insert your key here
-
+const API_KEY = process.env.REACT_APP_OWM_API_KEY || "";
 export default function WeatherApp() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState("");
@@ -34,4 +33,5 @@ export default function WeatherApp() {
       <WeatherDisplay weather={weather} error={error} />
     </div>
   );
+
 }
