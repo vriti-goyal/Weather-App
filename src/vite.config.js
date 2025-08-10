@@ -1,7 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: 'Weather_App', // e.g. '/Weather-App/'
+  base: '/Weather-App/',   // <-- exact repo name, with slashes
 })
