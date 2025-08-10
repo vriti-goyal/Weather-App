@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/YOUR_REPO_NAME/', // e.g. '/Weather-App/'
+  base: 'Weather_App', // e.g. '/Weather-App/'
 })
